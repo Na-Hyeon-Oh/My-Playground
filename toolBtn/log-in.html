@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../base.css">
+    <link rel="stylesheet" href="log-in.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200&display=swap" rel="stylesheet">
+    <title>Lucy_LogIn</title>
+    <link rel="shortcut icon" type="image/x-icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Apple_logo_black.svg/800px-Apple_logo_black.svg.png">
+</head>
+<body>
+  <header class="header">
+      <div class="logo">
+          <a href="../main.html"> Lucy </a>
+      </div>
+
+
+      <div class="toolBtn">
+        <!--<i class="fas fa-bars"></i>-->
+        <img src="../images/options.png" width=20px>
+
+        <div class="dropdown">
+          <div class="dropdown-user-text">No current user</div>
+
+          <div class="dropdown-mini-menu">
+            <a href="../toolBtn/log-in.html">Log In</a>
+            <a href="../toolBtn/registration.html">Registration</a>
+            <a href="">Settings</a>
+            <a href="">Get help</a>
+          </div>
+        </div>
+      </div>
+  </header>
+
+  <div class="log-in">
+    <form>
+      <fieldset>
+        <legend><h1> Log-in </h1></legend>
+
+        <div class="user-info">
+          <img src="../images/who.png" alt="who" width=200px>
+          <br><br>
+          <b>ID  </b> <input id="input_box" type="text" name="ID" placeholder="Write your ID">
+          <br>
+          <b>Password  </b><input id="input_box" type="text" name="PW" placeholder="Write your Password">
+          <br>
+          <input id="button" type="submit" name="Log-in" value="LOG-IN">
+        </div>
+      </fieldset>
+    </form>
+  </div>
+
+  <footer class="footer">
+    <div id="img_frame">
+      <img id="img" src="../images/footer_logo.png" alt="who">
+    </div>
+    <p id = "description">
+      If you click Log-out from tool bar in any pages provided in this web-site, you have to re-log-in to use services.<br>
+      Type your member-id and password then click log-in button.
+    </p>
+  </footer>
+</body>
+</html>

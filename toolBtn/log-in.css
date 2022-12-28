@@ -1,0 +1,43 @@
+.dropdown{
+  padding: 10px;
+  position: absolute;
+  display: none;
+  background-color: var(--main-background-color);
+  border: solid 2px var(--main-highlight-color);
+  border-radius: 25px;
+  height: 210px;
+  width: 200px;
+  top: 30px;
+  left: -200px;
+}
+
+
+.log-in {
+  margin : 0 20px 20px 20px;
+  color: var(--main-background-color);
+}
+
+.log-in h1 {
+  font-family: 'Cairo', sans-serif;
+}
+
+.log-in .user-info {
+    padding: 10px;
+    text-align: center;
+}
+
+.log-in #input_box {
+  height: 20px;
+  margin: 5px;
+  background: var(--main-font-color-white);
+  color: var(--main-background-color);
+}
+
+.log-in #button {
+  width: 100px;
+  height: 30px;
+  margin: 10px;
+
+  background-color: var(--main-font-color-black);
+  color: var(--main-font-color-white);
+}

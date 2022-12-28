@@ -1,0 +1,137 @@
+:root {
+
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  padding: 10px 20px;
+}
+
+.gallery {
+  font-family: "Apple Chancery", cursive;
+  overflow: visible;
+  column-count: 4;
+	column-gap: 16px;
+}
+
+.grid-item {
+	display: inline-block;
+	margin: 13.5px 5px;
+	position: relative;
+}
+.grid-item:before {
+	border-radius: 5px;
+	content: "";
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background-color: rgb(0, 0, 0, 0.3);
+}
+.grid-item:hover {
+  transform: scale(1.05, 1.05);
+	z-index: 1000;
+}
+
+.grid-item img {
+	width: 100%;
+	border-radius: 5px;
+}
+
+.grid-body {
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	padding: 30px;
+	color: white;
+	display: flex;
+	flex-direction: column;
+}
+.grid-body .grid_title {
+	font-size: 3vw;
+	font-weight: bold;
+	margin: 5px;
+}
+.grid-body .grid_author {
+	font-size: 0.8rem;
+  margin: 0 5px;
+}
+.grid-body .grid_tag {
+  width: 30%;
+	background-color: rgb(255, 255, 255, 0.8);
+	border-radius: 5px;
+  margin: 1rem 5px 5px 70%;
+	padding: 5px;
+  text-align: center;
+  font-size: 0.85em;
+}
+.grid-body .grid_tag :hover {
+	background-color: rgb(255, 255, 255, 1);
+
+}
+.grid-body .grid_tag a {
+  color: var(--main-background-color);
+  text-decoration: underline;
+}
+
+
+@media screen and (max-width: 960px) {
+  .gallery {
+    column-count: 3;
+  }
+
+  .grid-body .grid_title {
+  	font-size: 4vw;
+  }
+  .grid-body .grid_tag {
+    font-size: 0.65em;
+  }
+}
+
+@media screen and (max-width: 768px) {
+
+}
+
+@media screen and (max-width: 630px) {
+  .gallery {
+    column-count: 2;
+  }
+
+  .grid-body .grid_title {
+  	font-size: 5vw;
+  }
+  .grid-body .grid_tag {
+    font-size: 0.5em;
+  }
+}
+
+@media screen and (max-width: 480px) {
+
+}
+
+
+@media screen and (min-width: 1320px) {
+  .gallery {
+    column-count: 6;
+  }
+
+  .grid-body .grid_title {
+  	font-size: 1.5vw;
+  }
+}
+@media screen and (min-width: 1500px) {
+  .gallery {
+    column-count: 8;
+  }
+
+  .grid-body .grid_title {
+  	font-size: 1vw;
+  }
+}

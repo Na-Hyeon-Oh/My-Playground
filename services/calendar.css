@@ -1,0 +1,208 @@
+/* Calendar
+12. Use the gridbox module to create a grid layout.
+*/
+
+:root {
+  --font-color: white;
+  --card-color: #78ACCD;
+  --today-color: black;
+  --emphasis-color: #DE6E46;
+  --emphasis-color-2: #8b3bff;
+  --prev-next-color: #ccc;
+
+  --radius : 50%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 10px;
+    font-family: sans-serif;
+}
+
+body {
+    color: var(--font-color);
+    font-size: 1.5rem;
+}
+
+ul {
+    list-style: none;
+}
+
+
+.calendar_card {
+    background: var(--card-color);
+    width: 90%;
+    max-width: 64rem;
+    min-height: 36rem;
+    margin: 30px auto;
+    padding: 5px;
+
+    display: grid;
+    grid-template-rows: 8rem auto 10rem;
+    box-shadow: 0 1rem 2.5rem rgb(27, 64, 94);
+    font-family: 'Architects Daughter', cursive;
+}
+
+.card_header {
+    padding: 0 1rem;
+    color: var(--font-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#today {
+    color:var(--today-color);
+}
+#today :hover {
+    background:var(--today-color);
+    color: var(--font-color);
+}
+
+.card_body {
+    padding: 3rem 2rem;
+    border-top: 2px dashed var(--font-color);
+    border-bottom: 2px solid var(--font-color);
+}
+.card_body-days {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 4rem;
+    padding-bottom: 1rem;
+}
+.card_body-days li {
+    flex: 1;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.card_body-dates {
+    display: grid;
+    grid-gap: 3px;
+    grid-template-columns: repeat(7, 1fr);
+    justify-items: center;
+    text-align: center;
+}
+.card_body-dates li {
+    width: 3.25rem;
+    height: 3.25rem;
+    display: grid;
+    place-items: center;
+    position: relative;
+}
+.card_body-dates li:hover {
+    background: var(--today-color);
+    border-radius: var(--radius);
+}
+.card_body-dates li.prev, li.next {
+    color: var(--prev-next-color);
+}
+.card_body-dates li.today {
+    background: var(--today-color);
+    border-radius: var(--radius);
+    border: 2px solid;
+    border-color: var(--today-color);
+}
+.card_body-dates li.today:hover{
+    background: var(--font-color);
+    color: var(--today-color);
+}
+.card_body-dates li.circle {
+    border: 2px solid;
+    border-radius:  var(--radius);
+}
+.card_body-dates li.circle.web-assign {
+    border-color: var(--emphasis-color);
+}
+.card_body-dates li.circle.exam {
+    border-color: var(--emphasis-color-2);
+}
+
+.card_body-dates li.circle:hover .to-do {
+    display: block;
+}
+.card_body-dates li.circle .to-do {
+  padding: 5px;
+  position: absolute;
+  display: none;
+  border: dashed 2px var(--font-color);
+  background-color: var(--emphasis-color);
+  border-radius: 10px;
+  min-width: 15rem;
+  top: 10px;
+  left: 20px;
+  text-align: center;
+  font-size: small;
+  z-index: 1000;
+  opacity: 1;
+}
+.card_body-dates li.circle #asssignment {
+  background-color: var(--emphasis-color);
+}
+.card_body-dates li.circle #test {
+  background-color: var(--emphasis-color-2);
+}
+
+
+.card_footer {
+    font-weight: bold;
+
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+}
+.calendar_card .add :hover{
+  transform: scale(1.25, 1.25);
+  -webkit-transform: scale(1.25, 1.25);
+}
+
+
+.card_footer img {
+  width: 32px;
+}
+
+
+
+/* tablet */
+@media screen and (max-width: 768px) {
+  .calendar_card {
+    max-width: 48rem;
+  }
+  .card_body-dates li {
+      width: 3rem;
+      height: 3rem;
+  }
+  .card_body-dates li.circle .to-do {
+    min-width: 10rem;
+    font-size: 10px;
+  }
+}
+
+
+
+/* mobile */
+@media screen and (max-width: 480px) {
+  .calendar_card {
+    max-width: 32rem;
+  }
+  .card_body-dates li {
+      width: 2.5rem;
+      height: 2.5rem;
+  }
+  .card_body-dates li.circle .to-do {
+    min-width: 6rem;
+    font-size: 3px;
+  }
+
+  .card_footer img {
+    display: none;
+  }
+  .calendar_card .add img {
+    display: flex;
+  }
+}

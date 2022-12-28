@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../base.css">
+    <link rel="stylesheet" href="blog.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Cairo:wght@200;700&display=swap" rel="stylesheet">
+    <title>Lucy_Blog</title>
+    <link rel="shortcut icon" type="image/x-icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Apple_logo_black.svg/800px-Apple_logo_black.svg.png">
+</head>
+<body>
+  <header class="header">
+    <div class="logo">
+        <a href="../main.html"> Lucy </a>
+    </div>
+
+    <div class="toolBtn">
+      <!--<i class="fas fa-bars"></i>-->
+      <img src="../images/options.png" width=20px>
+
+      <div class="dropdown">
+        <div class="dropdown-user-text">Currently in</div>
+        <div class="dropdown-user">
+            <img src="../images/profile-user.png" alt="profile" width=30px>
+            <div class="dropdown-user-info">
+                <ul><b>User Name :  </b>Na-Hyeon-Oh</ul>
+                <ul><b>Email :  </b>onh0195@g.skku.edu</ul>
+                <!--
+                <ul class="user_links">
+                    <li><a href="https://github.com/Na-Hyeon-Oh"><i class="fab fa-github"></i></a></li>
+                    <li><a href="https://twitter.com/"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="https://www.facebook.com/"><i class="fab fa-facebook-square"></i></a></li>
+                    <li><a href="https://www.instagram.com/rovr.ly/"><i class="fab fa-instagram-square"></i></a></li>
+                    <li><a href="https://blog.naver.com/onh0195"><i class="fab fa-blogger"></i></a></li>
+                </ul>-->
+            </div>
+        </div>
+
+        <div class="dropdown-mini-menu">
+          <a href="../toolBtn/log-in.html">Log Out</a>
+          <a href="../toolBtn/registration.html">Registration</a>
+          <a href="">Settings</a>
+          <a href="">Get help</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="content">
+    <!-- to-do -->
+    <div class="to-do">
+      <h1>Today's To-Do CheckList</h1>
+      <div class="list">
+        <h2 class="undone">Not Done</h2>
+        <h2 class="done">Done</h2>
+
+        <input type="checkbox"><label> Web-Programming-Lab Midterm Project</label>
+        <input type="checkbox"><label> Get Vaccinated</label>
+        <input type="checkbox" checked><label> Web-Programming-Lab Week7 Practice</label>
+        <input type="checkbox" checked><label> Create choreography</label>
+        <input type="checkbox" checked><label> Visit Library</label>
+      </div>
+    </div>
+
+    <!-- daily diary -->
+    <section class="diary">
+      <div class="meta">
+        <img src="../images/gallery-img-11-02.jpg" alt="img">
+
+        <ul class="details">
+          <li id="author">Na-Hyeon-Oh</li>
+          <li id="date">Written 2021.10.27 12:28AM</li>
+          <li id="tags">
+            <ul>
+              <li><a href="#">#Utilize</a></li>
+              <li><a href="#">#HTML</a></li>
+              <li><a href="#">#CSS</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+
+      <article class="post">
+        <h2 id="title">Before finishing assignments</h2>
+        <h3 id="subtitle"> shopping with mom </h3><br>
+        <p id="content">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          <br>...
+        </p>
+        <p id="more"><a href="#"> Read More -></a></p>
+      </article>
+    </section>
+  </main>
+
+  <div class="post_btn">
+    <a href="#" class="post_btn">
+      <img src="../images/add.png" alt="add">
+    </a>
+  </div>
+
+  <footer class="footer">
+    <div id="img_frame">
+      <img id="img" src="../images/footer_logo.png" alt="who">
+    </div>
+    <p id = "description">
+      This page is for your own daily blogging. <br>
+      You can read and write down your daily diary with your today's to-do check list.
+    </p>
+  </footer>
+</body>
+</html>

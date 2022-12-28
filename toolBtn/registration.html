@@ -1,0 +1,199 @@
+<!--
+5. Make the page that collects user information (ex. member registration page) using form tag.
+▪ Use radio boxes and check boxes to collect the user information.
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../base.css">
+    <link rel="stylesheet" href="registration.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200&display=swap" rel="stylesheet">
+    <title>Lucy_Registration</title>
+    <link rel="shortcut icon" type="image/x-icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Apple_logo_black.svg/800px-Apple_logo_black.svg.png">
+</head>
+<body>
+  <header class="header">
+      <div class="logo">
+          <a href="../main.html"> Lucy </a>
+      </div>
+
+
+      <div class="toolBtn">
+        <!--<i class="fas fa-bars"></i>-->
+        <img src="../images/options.png" width=20px>
+
+        <div class="dropdown">
+          <div class="dropdown-user-text">Currently in</div>
+          <div class="dropdown-user">
+              <img src="../images/profile-user.png" alt="profile" width=30px>
+              <div class="dropdown-user-info">
+                  <ul><b>User Name :  </b>Na-Hyeon-Oh</ul>
+                  <ul><b>Email :  </b>onh0195@g.skku.edu</ul>
+                  <!--
+                  <ul class="user_links">
+                      <li><a href="https://github.com/Na-Hyeon-Oh"><i class="fab fa-github"></i></a></li>
+                      <li><a href="https://twitter.com/"><i class="fab fa-twitter"></i></a></li>
+                      <li><a href="https://www.facebook.com/"><i class="fab fa-facebook-square"></i></a></li>
+                      <li><a href="https://www.instagram.com/rovr.ly/"><i class="fab fa-instagram-square"></i></a></li>
+                      <li><a href="https://blog.naver.com/onh0195"><i class="fab fa-blogger"></i></a></li>
+                  </ul>-->
+              </div>
+          </div>
+
+          <div class="dropdown-mini-menu">
+            <a href="../toolBtn/log-in.html">Log Out</a>
+            <a href="../toolBtn/registration.html">Registration</a>
+            <a href="">Settings</a>
+            <a href="">Get help</a>
+          </div>
+        </div>
+      </div>
+  </header>
+
+  <div class="registration">
+    <!-- member-registration-form-page -->
+    <form>
+      <fieldset class="registrate_info">
+        <legend><h1>Member-Registration-Form</h1></legend>
+
+        <p id="notion">*** All information should be typed for your registration except for gender, birthday, main-purpose and profile.</p>
+        <div>
+          What is your name?<br>
+          <input type ="text" name="name" placeholder="Enter your name" required><br><br>
+
+          What is your E-mail Address?<br>
+          <input type="text" name="email_address" value="" placeholder="Enter your e-mail address" style="width: 160px" required>
+          @
+          <select name="e-mail">
+            <option value="naver">naver.com</option>
+            <option value="kakao">kakao.com</option>
+            <option value="gmail" selected>gmail.com</option>
+            <option value="skku"> g.skku.edu</option>
+            <option value="nate">nate.com</option>
+            <option value="yahoo">yahoo.com</option>
+          </select>
+          <br><br>
+
+          Write down your Password.<br>
+          <input type="password" minlength='8' placeholder="Enter your password" required />
+          <small>Format: over 8 characters</small>
+          <br>
+          Confirm your Password.<br>
+          <input type="password" minlength='8' placeholder="Confirm password" required/>
+          <br><br>
+
+          What is your Phone Number.<br>
+          <input type="tel" name="phone_number" placeholder="Enter your phone number"
+          pattern="[0-9]{3}-[0-9]{4}-[0-9]{4}" required>
+          <small>Format: ###-####-####</small>
+          <br><br>
+
+          What is your gender?<br>
+          <input type="radio" name="gender" value="male"> Male
+          <input type="radio" name="gender" value="female"> Female
+          <br><br>
+
+          When is your birthday?<br>
+          <input type ="datetime-local" name="d-day"><br><br>
+
+          What is your main purpose using this website?<br>
+          <input type="checkbox" name="opt1" value="pr">For self-PR<br>
+          <input type="checkbox" name="opt2" value="blog">For Blog<br>
+          <input type="checkbox" name="opt3" value="photo">For photobooth<br>
+          <input type="checkbox" name="opt4" value="calendar">For managing and planning with calendar<br>
+          <input type="checkbox" name="opt5" value="etcs">Etcs
+          <input type="text" name="etcs" value="" style="margin-left: 10px; width: 250px">
+          <br><br>
+
+          Introduce yourself for your profile:)<br>
+          <textarea name="introduction_msg" rows="4" cols="50"></textarea>
+          <br><br>
+        </div>
+      </fieldset>
+
+      <div class="img">
+        <img src="../images/register.jpeg" alt="registration_img">
+      </div>
+
+      <fieldset class="survey">
+        <legend><h1>Survey</h1></legend>
+
+        <p id="notion">*** Not all information should be typed for your registration.</p>
+        <div>
+          What is your job?<br>
+          <input type="radio" name="job" value="student"> Student
+          <input type="radio" name="job" value="engineer"> Engineer
+          <input type="radio" name="job" value="civil_servant"> Civil Servant<br>
+          <input type="radio" name="job" value="professor"> Professor
+          <input type="radio" name="job" value="actor"> Actor
+          <input type="radio" name="job" value="entertainer"> Entertainer<br>
+          <input type="radio" name="job" value="announcer"> Announcer
+          <input type="radio" name="job" value="cook"> Cook
+          <input type="radio" name="job" value="painter"> Painter<br>
+          <input type="radio" name="job" value="doctor"> Doctor
+          <input type="radio" name="job" value="farmer"> Farmer
+          <input type="radio" name="job" value="journalist"> Journalist<br>
+          <input type="radio" name="job" value="lawyer"> Lawyer
+          <input type="radio" name="job" value="judge"> Judge
+          <input type="radio" name="job" value="prosecutor"> Prosecutor<br>
+          <input type="radio" name="job" value="scientist"> Scientist
+          <input type="radio" name="job" value="soldier"> Soldier
+          <input type="radio" name="job" value="statesman"> Statesman<br>
+          <input type="radio" name="job" value="trainer"> Trainer
+          <input type="radio" name="job" value="creator"> Creator
+          <input type="radio" name="job" value="etcs"> Etcs
+          <br><br>
+
+          What is your hobby?<br>
+          <input type="checkbox" name="optA" value="pr">Listening to music<br>
+          <input type="checkbox" name="optB" value="blog">Dancing<br>
+          <input type="checkbox" name="optC" value="photo">Reading books<br>
+          <input type="checkbox" name="optD" value="calendar">Leisure sports<br>
+          <input type="checkbox" name="optE" value="photo">Traveling<br>
+          <input type="checkbox" name="optF" value="calendar">Drawing<br>
+          <input type="checkbox" name="optE" value="etcs">Etcs
+          <input type="text" name="etcs_2" value="" style="margin-left: 10px; width: 250px">
+          <br><br>
+
+          What is your favorite color?<br>
+          <input type ="color" name="favcolor" value="#000000"><br><br>
+
+          What would you like to receive as a gift?<br>
+          <select name="gift_preference">
+            <option value="Coupon">Coupon</option>
+            <option value="Cloth">Cloth</option>
+            <option value="Meat">Meat</option>
+            <option value="Ice Coffee">Ice Coffee</option>
+            <option value="Money" selected>Money</option>
+            <option value="Notebook">Notebook</option>
+            <option value="House">House</option>
+            <option value="Etcs">Etcs</option>
+          </select><br><br>
+        </div>
+      </fieldset>
+      <br>
+
+      <input id="submit" type="submit" name="submitBtn" value="SUBMIT">
+    </form>
+  </div>
+
+  <footer class="footer">
+    <div id="img_frame">
+      <img id="img" src="../images/footer_logo.png" alt="who">
+    </div>
+    <p id = "description">
+      This is the page for member registration. <br>
+      Any member who wants to register should enter some answers according to the questions, and some survey questions are not mandatory.
+      After answering all questions, you have to click submit button at the bottom of the page!
+    </p>
+  </footer>
+</body>
+</html>

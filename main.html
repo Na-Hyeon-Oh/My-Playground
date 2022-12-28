@@ -1,0 +1,151 @@
+<!--
+3. At least one html page has basic form (header, nav, content, footer).
+7. All pages in the website should be responsive web.
+8. Each page should include at least 2 multimedia (image, audio etc.).
+ -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="base.css">
+    <link rel="stylesheet" href="main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo&display=swap" rel="stylesheet">
+    <title>Lucy</title>
+    <link rel="shortcut icon" type="image/x-icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Apple_logo_black.svg/800px-Apple_logo_black.svg.png">
+</head>
+<body>
+  <header class="header">
+    <!-- logo -->
+    <div class="logo">
+        <a href="../main.html"> Lucy </a>
+    </div>
+
+    <!-- toolBtn -->
+    <div class="toolBtn">
+      <!--<i class="fas fa-bars"></i>-->
+      <img src="./images/options.png" width=20px>
+
+      <div class="dropdown">
+        <div class="dropdown-user-text">Currently in</div>
+        <div class="dropdown-user">
+            <img src="./images/profile-user.png" alt="profile" width=30px>
+            <div class="dropdown-user-info">
+                <ul><b>User Name :  </b>Na-Hyeon-Oh</ul>
+                <ul><b>Email :  </b>onh0195@g.skku.edu</ul>
+
+                <!--
+                <ul class="user_links">
+                    <li><a href="https://github.com/Na-Hyeon-Oh"><i class="fab fa-github"></i></a></li>
+                    <li><a href="https://twitter.com/"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="https://www.facebook.com/"><i class="fab fa-facebook-square"></i></a></li>
+                    <li><a href="https://www.instagram.com/rovr.ly/"><i class="fab fa-instagram-square"></i></a></li>
+                    <li><a href="https://blog.naver.com/onh0195"><i class="fab fa-blogger"></i></a></li>
+                </ul>
+                -->
+            </div>
+        </div>
+
+        <div class="dropdown-mini-menu">
+          <a href="./toolBtn/log-in.html">Log Out</a>
+          <a href="./toolBtn/registration.html">Registration</a>
+          <a href="">Settings</a>
+          <a href="">Get help</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <nav class="navbar">
+      <ul class="menu">
+          <li><a href="main.html"> Home </a></li>
+          <li><a href="./services/blog.html"> Daily </a></li>
+          <li><a href="./services/photo.html"> Photo </a></li>
+          <li><a href="./services/calendar.html"> Calendar </a></li>
+      </ul>
+  </nav>
+
+  <main class="content">
+    <!-- search box through google -->
+    <div class="search">
+        <input id="search_txt" type="text" placeholder="Search"/>
+        <a href="https://www.google.com"><img id="search_id" src="./images/search.png" alt="search-icon"></a>
+    </div>
+
+      <!-- PR page-->
+    <div class="playground">
+      <!--self-introduction on the left-->
+      <!-- using animation -->
+      <div class="intro">
+        <div id="typing">LUCETE</div>
+
+        Hello.<br>
+        Here is Na-Hyeon-Oh.<br>
+        Nice to meet you:)<br><br>
+        <hr>
+
+        <ul class="info">
+          <li><b> Name   </b> Na-Hyeon-Oh <br></li>
+          <li><b> E-mail   </b> onh0195@g.skku.edu <br></li>
+          <li><b> Majoring   </b> Software  <br></li>
+          <li><b> Belong to   </b> Sunkyunkwan University  <br></li>
+          <li><b> Grade   </b> Junior  <br></li>
+          <li><b> Birthday   </b> 2001.02.14  <br></li>
+          <li><b> Hobbies   </b> Choreography, Listening to music, Walking, Traveling  <br></li>
+          <li><b> Likes   </b> Chicken dish, Wolnam Ssam, Something to immerse and do my best  <br></li>
+          <li><b> Dislikes   </b> Cucumber, Repeating the same words  <br></li>
+        </ul>
+        <hr><br>
+
+        Feel free to ask me anything via my e-mail address.
+      </div>
+
+      <!-- music player, interest, skills on the right-->
+      <div class="more">
+        <div class="skill">
+          <!-- as a programmer -->
+          <h3>Skills</h3>
+          <table>
+            <tr>
+              <td><img src="images/html5.svg" alt="html5"></td>
+              <td><img src="images/css3.svg" alt="css3"></td>
+              <td><img src="images/javascript.svg" alt="js"></td>
+            </tr>
+          </table>
+        </div>
+
+        <div class="interest">
+          <!-- using audio.video.. multimedia -->
+          <h3>Entertainment</h3>
+
+          <div class="youtube">
+            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/T3y9R-RANbY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <a href="https://www.youtube.com/watch?v=T3y9R-RANbY">
+              <p>[스트릿 우먼 파이터] Eat You Up + Better - YGX</p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  </main>
+
+  <footer class="footer">
+    <div id="img_frame">
+      <img id="img" src="images/footer_logo.png" alt="who">
+    </div>
+    <p id = "description">
+      This is Midterm Project of the course, Web Programming Lab in Sunkyunkwan University! <br>
+      We hope you can enjoy all services in this web-site with various features and contents (e.g. Family/Personal blog, Social website, (Youtuber, Boutique) PR homepage, Web search page and so on).
+    </p>
+  </footer>
+</body>
+</html>
